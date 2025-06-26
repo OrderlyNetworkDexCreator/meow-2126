@@ -1,94 +1,177 @@
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  WINDOWS-XP “LUNA” LIGHT THEME – COMPLETE CSS                               */
+/*  Paste this entire block into your custom-theme CSS field                  */
+/*─────────────────────────────────────────────────────────────────────────────*/
 :root {
   --oui-font-family: 'Manrope', sans-serif;
 
-  /* colors */
-  --oui-color-primary: 176 132 233;
-  --oui-color-primary-light: 213 190 244;
-  --oui-color-primary-darken: 137 76 209;
-  --oui-color-primary-contrast: 255 255 255;
+  /* ── Core Palette ─────────────────────────────────── */
+  --oui-color-primary:             58 110 165;   /* XP taskbar blue */
+  --oui-color-primary-light:      104 140 213;
+  --oui-color-primary-darken:       37  74 130;
+  --oui-color-primary-contrast:   255 255 255;
 
-  --oui-color-link: 189 107 237;
-  --oui-color-link-light: 217 152 250;
+  --oui-color-link:                 0 102 204;   /* classic link blue */
+  --oui-color-link-light:          51 153 255;
 
-  --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 218 218 218;
-  --oui-color-quaternary: 218 218 218;
+  --oui-color-secondary:          255 255 255;
+  --oui-color-tertiary:           220 220 220;
+  --oui-color-quaternary:         211 211 211;
 
-  --oui-color-danger: 245 97 139;
-  --oui-color-danger-light: 250 167 188;
-  --oui-color-danger-darken: 237 72 122;
-  --oui-color-danger-contrast: 255 255 255;
+  --oui-color-danger:             200   0   0;
+  --oui-color-danger-light:       255 102 102;
+  --oui-color-danger-darken:      140   0   0;
+  --oui-color-danger-contrast:    255 255 255;
 
-  --oui-color-success: 41 233 169;
-  --oui-color-success-light: 101 240 194;
-  --oui-color-success-darken: 0 161 120;
-  --oui-color-success-contrast: 255 255 255;
+  --oui-color-success:              99 178  79;
+  --oui-color-success-light:      142 214 131;
+  --oui-color-success-darken:       55 146  34;
+  --oui-color-success-contrast:   255 255 255;
 
-  --oui-color-warning: 255 209 70;
-  --oui-color-warning-light: 255 229 133;
-  --oui-color-warning-darken: 255 152 0;
-  --oui-color-warning-contrast: 255 255 255;
+  --oui-color-warning:            255 201  14;
+  --oui-color-warning-light:      255 226 117;
+  --oui-color-warning-darken:     255 152   0;
+  --oui-color-warning-contrast:      0   0   0;
 
-  --oui-color-fill: 36 32 47;
-  --oui-color-fill-active: 40 46 58;
+  /* ── Light Surfaces ───────────────────────────────── */
+  --oui-color-fill:               245 245 245;   /* window body */
+  --oui-color-fill-active:        225 230 242;   /* hover/active */
 
-  --oui-color-base-1: 93 83 123;
-  --oui-color-base-2: 81 72 107;
-  --oui-color-base-3: 68 61 69;
-  --oui-color-base-4: 57 52 74;
-  --oui-color-base-5: 51 46 66;
-  --oui-color-base-6: 43 38 56;
-  --oui-color-base-7: 36 32 47;
-  --oui-color-base-8: 29 26 38;
-  --oui-color-base-9: 22 20 28;
-  --oui-color-base-10: 14 13 18;
+  /* Flood the shell with light greys (Base 1 → 10) */
+  --oui-color-base-1:            255 255 255;
+  --oui-color-base-2:            250 250 250;
+  --oui-color-base-3:            245 245 245;   /* matches TradingView BG */
+  --oui-color-base-4:            240 240 240;
+  --oui-color-base-5:            235 235 235;
+  --oui-color-base-6:            230 230 230;
+  --oui-color-base-7:            225 225 225;
+  --oui-color-base-8:            220 220 220;
+  --oui-color-base-9:            215 215 215;
+  --oui-color-base-10:           210 210 210;
 
-  --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 255 255 255;
+  --oui-color-base-foreground:     0   0   0;   /* text */
+  --oui-color-line:              80  86 104;   /* separators */
 
-  --oui-color-trading-loss: 245 97 139;
+  /* Trading P/L */
+  --oui-color-trading-loss:      200   0   0;
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 41 233 169;
+  --oui-color-trading-profit:     99 178  79;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* gradients */
-  --oui-gradient-primary-start: 40 0 97;
-  --oui-gradient-primary-end: 189 107 237;
+  /* ── Gradients (optional) ─────────────────────────── */
+  --oui-gradient-primary-start:    40   0  97;
+  --oui-gradient-primary-end:     189 107 237;
 
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
+  --oui-gradient-secondary-start:  81  42 121;
+  --oui-gradient-secondary-end:   176 132 233;
 
-  --oui-gradient-success-start: 1 83 68;
-  --oui-gradient-success-end: 41 223 169;
+  --oui-gradient-success-start:     1  83  68;
+  --oui-gradient-success-end:      41 223 169;
 
-  --oui-gradient-danger-start: 153 24 76;
-  --oui-gradient-danger-end: 245 97 139;
+  --oui-gradient-danger-start:    153  24  76;
+  --oui-gradient-danger-end:      245  97 139;
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
+  --oui-gradient-brand-start:     104 140 213;
+  --oui-gradient-brand-end:        58 110 165;
   --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
+  --oui-gradient-brand-stop-end:   86.5%;
+  --oui-gradient-brand-angle:      17.44deg;
 
-  --oui-gradient-warning-start: 152 58 8;
-  --oui-gradient-warning-end: 255 209 70;
+  --oui-gradient-warning-start:   152  58   8;
+  --oui-gradient-warning-end:     255 209  70;
 
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
+  --oui-gradient-neutral-start:     27  29  24;
+  --oui-gradient-neutral-end:       38  41  46;
 
-  /* rounded */
-  --oui-rounded-sm: 2px;
-  --oui-rounded: 4px;
-  --oui-rounded-md: 6px;
-  --oui-rounded-lg: 8px;
-  --oui-rounded-xl: 12px;
-  --oui-rounded-2xl: 16px;
-  --oui-rounded-full: 9999px;
+  /* ── Corner Radii (compact XP style) ───────────────── */
+  --oui-rounded-sm:    2px;
+  --oui-rounded:       3px;
+  --oui-rounded-md:    4px;
+  --oui-rounded-lg:    6px;
+  --oui-rounded-xl:    8px;
+  --oui-rounded-2xl:  10px;
+  --oui-rounded-full: 9999px;   /* avatars/toggles */
 
-  /* spacing */
-  --oui-spacing-xs: 20rem;
-  --oui-spacing-sm: 22.5rem;
-  --oui-spacing-md: 26.25rem;
-  --oui-spacing-lg: 30rem;
-  --oui-spacing-xl: 33.75rem;
+  /* ── Spacing Scale (compact XP rhythm) ─────────────── */
+  --oui-spacing-xs: 0.25rem;  /* 4px */
+  --oui-spacing-sm: 0.5rem;   /* 8px */
+  --oui-spacing-md: 0.75rem;  /* 12px */
+  --oui-spacing-lg: 1rem;     /* 16px */
+  --oui-spacing-xl: 1.25rem;  /* 20px */
+
+  /* ── Global Surface Tokens Orderly Uses ───────────── */
+  --oui-surface:       245 245 245;
+  --oui-surface-alt:   236 233 216;
+  --oui-panel:         255 255 255;
+  --oui-panel-alt:     245 245 245;
+}
+
+/*──────────────── Base body reset ─────────────────────*/
+html,
+body {
+  background: rgb(var(--oui-surface));
+  color: rgb(var(--oui-color-base-foreground));
+}
+
+/*──────────────── FORCE-LIGHT PATCH ───────────────────*/
+body,
+html,
+#root,
+.oui-app,
+.oui-app > div,
+[class*="chrome"],
+[class*="App"],
+[class*="Shell"],
+[class*="Surface"],
+[class*="Panel"],
+[class*="Wrapper"],
+.bg-surface,
+.bg-default {
+  background: rgb(var(--oui-surface)) !important;
+  color: rgb(var(--oui-color-base-foreground)) !important;
+}
+
+/* side navigation */
+[class*="SideNav"],
+[class*="Sidebar"] {
+  background: rgb(var(--oui-surface)) !important;
+}
+
+/* order ticket & detail panels */
+[class*="Ticket"],
+[class*="Orderbook"],
+[class*="TradeHistory"] {
+  background: rgb(var(--oui-panel)) !important;
+}
+
+/* strip any dark overlay */
+body::before,
+body::after,
+#root::before,
+#root::after {
+  content: none !important;
+}
+
+/*──────────────── TradingView canvas & grid ───────────*/
+.tv-lightweight-charts,
+.chart-container,
+tradingview-widget,
+[class*="tradingview"],
+[class*="Chart"] {
+  background: #F5F5F5 !important;
+}
+
+.tv-lightweight-charts .pane-legend,
+.tv-lightweight-charts line,
+.tv-lightweight-charts path {
+  stroke: #D0D4DE !important;
+}
+
+/*──────────────── Disable residual dark-mode flags ───*/
+html.dark,
+body.dark,
+html[data-theme="dark"],
+body[data-theme="dark"] {
+  background: rgb(var(--oui-surface)) !important;
+  color: rgb(var(--oui-color-base-foreground)) !important;
 }
